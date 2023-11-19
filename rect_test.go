@@ -51,14 +51,7 @@ func TestDrawRect(t *testing.T) {
 		mw.ThumbnailImage(pWidth, pHeight)
 
 		if !started {
-			// 设置页面大小和边距
-			p.Start(gopdf.Config{
-				PageSize: gopdf.Rect{
-					W: float64(pWidth),
-					H: float64(pHeight),
-				},
-				Protection: gopdf.PDFProtectionConfig{},
-			})
+			p.Start(gopdf.Config{PageSize: *gopdf.PageSizeA4})
 			started = true
 		}
 
