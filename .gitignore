@@ -20,7 +20,10 @@
 # Go workspace file
 go.work
 
-.idea
+*.md
 *.pdf
-*.jpg
-*.py
+*.txt
+*.ttf
+*.html
+
+.idea/

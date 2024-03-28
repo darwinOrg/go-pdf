@@ -1,4 +1,4 @@
-package main
+package dgpdf
 
 import (
 	dgctx "github.com/darwinOrg/go-common/context"
